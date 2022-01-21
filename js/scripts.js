@@ -10,8 +10,8 @@ const userName = $("input#userName").val(); //UI logic in bus. logic??
           numArray.push("Boop!");
         } else if (numString.includes("1")) {
           numArray.push("Beep!");
-        } else if (i % 7 === 0) {
-          numArray.push("Hello, neigbhor!");
+        } else if ((i % 7 === 0) && (i !== 0)) {
+          numArray.push("Hello, neighbor!");
         } else {
         numArray.push(i)
         }

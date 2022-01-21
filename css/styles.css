@@ -2,3 +2,9 @@ img {
   border-radius: 11%;
   width: 400px;
 }
+
+#result {
+  font-size: larger;
+  font-weight: bolder;
+  color: brown;
+}

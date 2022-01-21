@@ -72,6 +72,14 @@ Code: ...
 User Input: 13
 Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...9, Beep!, Beep!, Boop!, Won't you be my neighbor?
 
+Test/objective:  Function should replace any number divisible by 7 with "Hello, neighbor!" & will not overwrite where also conatining 3 or 2.
+Code: ...
+    } else if (i % 7 === 0) {
+      numArray.push("Hello, neigbhor!");
+    }
+User Input: 7
+Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...6, Hello, neighbor!
+
 ## Known Bugs
 
 * No known issues
