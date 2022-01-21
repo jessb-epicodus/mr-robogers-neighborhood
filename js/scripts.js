@@ -5,29 +5,32 @@
 //business logic
 function beepBoop(num) {
   let numArray = [];
-    for (let i=0; i = num; i++) {
-      let numString = num.toString();
-    return numArray.push(numString);
+    for (let i=0; i <= num; i++) {
+      // let numString = i.toString();
+  
+      if (i.toString().includes("3")) {
+          numArray.push("Won't you be my neighbor?");
+        } 
+        else if(i.toString().numArray.includes("2")) {
+          numArray.push("Boop!");
+        } 
+        else if (i.toString().numArray.includes("1")) {
+          numArray.push("Beep!");
+        } 
+        else {
+        numArray.push(i)
+        }
     }
+    return numArray;
 }
-
-  // if (numString.includes ("3")) {
-  //   numArray.push("Won't you be my neighbor?");
-  // } else if(numString.includes ("2")) {
-  //  numArray.push("Boop!");
-  // } else if (numString.includes ("1")) {
-  //  numArray.push("Beep!");
-  // } else {
-  // numArray.push(numString)
-  // }
-
 
 //ui logic
 $(document).ready(function() {
   $("#mrrob").submit(function(event) {
     event.preventDefault();
-    const userNum = $("input#number").val();
-    let result = beepBoop(userNum);
-    $("#result").text(result);
-  });
+    const userNum = $("input#userNumber").val();
+    $("#result").text(beepBoop(userNum));
+   });
 });
+
+Imma send you mine 1 sec

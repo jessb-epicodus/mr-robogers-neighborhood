@@ -41,7 +41,7 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 Test/objective:  Array should create string to length of number input.
 Code: 
 User input: 5
-Expected outcome: 1, 2, 3, 4, 5
+Expected outcome: 0, 1, 2, 3, 4, 5
 
 * Describe: beepBoob()
 Test/objective:  Function should replace any number containing 3 with "Won't you be my neighbor?"
