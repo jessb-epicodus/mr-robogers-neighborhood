@@ -37,8 +37,24 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 
 ## Tests & Expected Outcomes
 
-* Describe: beepBoop()
-Test/objective:  
+* Describe: Array
+Test/objective:  Array should create string to length of number input.
+Code: 
+    for (let i = 0; i < num.length; i++) {
+      ;
+    }
+Expected outcome: 
+
+* Describe: beepBoob()
+Test/objective:  Function should replace any number containing 3 with "Won't you be my neighbor?"
+Code: 
+Expected outcome: 
+
+Test/objective:  Function should replace any number containing 2 with "Boop?" & will not overwrite where also conatining 3.
+Code: 
+Expected outcome: 
+
+Test/objective:  Function should replace any number containing 1 with "Beep!?" & will not overwrite where also conatining 3 or 2.
 Code: 
 Expected outcome: 
 
