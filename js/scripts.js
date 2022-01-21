@@ -5,10 +5,22 @@
 //business logic
 function beepBoop(num) {
   let numArray = [];
-    for (let i=0; i <= num; i++) {
-      let numString = i.toString();
-  } return numArray;
+    for (let i=0; i = num; i++) {
+      let numString = num.toString();
+    return numArray.push(numString);
+    }
 }
+
+  // if (numString.includes ("3")) {
+  //   numArray.push("Won't you be my neighbor?");
+  // } else if(numString.includes ("2")) {
+  //  numArray.push("Boop!");
+  // } else if (numString.includes ("1")) {
+  //  numArray.push("Beep!");
+  // } else {
+  // numArray.push(numString)
+  // }
+
 
 //ui logic
 $(document).ready(function() {
