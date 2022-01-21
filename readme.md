@@ -4,14 +4,7 @@
 
 #### _Mr. Roboger's Neighborhood_
 
-## Technologies Used
 
-* GIT
-* HTML
-* CSS
-* Bootstrap
-* JavaScript
-* JQuery
 
 ## Description
 
@@ -27,32 +20,55 @@ A user should be able to enter a new number and see new results over and over ag
 
 Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
 
+## Technologies Used
+
+* GIT
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
+
 ## Setup/Installation Requirements
 
 * Go to _https://github.com/jessb-epicodus/mr-robogers-neighborhood.git_
 * Cone this repository to your desktop (or other desired location)
-* Navigate to the top level of the directory called _mr-robogers-neighborhood_
+* Navigate to the top level of the directory called -mr-robogers-neighborhood_
 * Open the index.html file in your browser
 * _This has not yet been published._
 
 ## Tests & Expected Outcomes
 
 * Describe: Array
-Test/objective:  Array should create string to length of number input.
+Test/objective:  Should use for loop & create string from 0 and to increase by 1 until it reaches the users number input.
 Code: 
+    let numArray = [];
+    for (let i=0; i <= num; i++) 
 User input: 5
 Expected outcome: 0, 1, 2, 3, 4, 5
 
 * Describe: beepBoob()
-Test/objective:  Function should replace any number containing 3 with "Won't you be my neighbor?"
+Test/objective:  Should use if conditional statement to push "Won't you be my neighbor?" in place of any number in the string containing "3"
+Code: ...
+    if (numString.includes("3")) {
+      numArray.push("Won't you be my neighbor?");
+    }
 User Input: 5
 Expected outcome: 1, 2, Won't you be my neighbor?, 4, 5
 
-Test/objective:  Function should replace any number containing 2 with "Boop!" & will not overwrite where also conatining 3.
+Test/objective:  Should use if conditional statement to push "Boop!" in place of any number in the string containing "2"
+Code: ...
+    } else if(numString.includes("2")) {
+      numArray.push("Boop!");
+    }
 User Input: 23
 Expected outcome: 1, Boop!, Won't you be my neighbor?, 4... 22,  Won't you be my neighbor?
 
 Test/objective:  Function should replace any number containing 1 with "Beep!" & will not overwrite where also conatining 3 or 2.
+Code: ...
+    } else if (numString.includes("1")) {
+      numArray.push("Beep!");
+    }
 User Input: 13
 Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...9, Beep!, Beep!, Boop!, Won't you be my neighbor?
 
