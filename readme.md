@@ -40,23 +40,21 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 * Describe: Array
 Test/objective:  Array should create string to length of number input.
 Code: 
-    for (let i = 0; i < num.length; i++) {
-      ;
-    }
-Expected outcome: 
+User input: 5
+Expected outcome: 1, 2, 3, 4, 5
 
 * Describe: beepBoob()
 Test/objective:  Function should replace any number containing 3 with "Won't you be my neighbor?"
-Code: 
-Expected outcome: 
+User Input: 5
+Expected outcome: 1, 2, Won't you be my neighbor?, 4, 5
 
-Test/objective:  Function should replace any number containing 2 with "Boop?" & will not overwrite where also conatining 3.
-Code: 
-Expected outcome: 
+Test/objective:  Function should replace any number containing 2 with "Boop!" & will not overwrite where also conatining 3.
+User Input: 23
+Expected outcome: 1, Boop!, Won't you be my neighbor?, 4... 22,  Won't you be my neighbor?
 
-Test/objective:  Function should replace any number containing 1 with "Beep!?" & will not overwrite where also conatining 3 or 2.
-Code: 
-Expected outcome: 
+Test/objective:  Function should replace any number containing 1 with "Beep!" & will not overwrite where also conatining 3 or 2.
+User Input: 13
+Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...9, Beep!, Beep!, Boop!, Won't you be my neighbor?
 
 ## Known Bugs
 
