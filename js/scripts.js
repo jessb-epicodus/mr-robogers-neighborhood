@@ -3,18 +3,19 @@
 // contain 1: all digits are replaced (all digits) with "Beep!"
 
 //business logic
-function beepBoop(num)
-  let array = []
-  for (let i = 0; i < num.length; i++) {
-
+function beepBoop(num) {
+  let numArray = [];
+    for (let i=0; i <= num; i++) {
+      let numString = i.toString();
+  } return numArray;
+}
 
 //ui logic
 $(document).ready(function() {
   $("#mrrob").submit(function(event) {
     event.preventDefault();
-    const num = $("input#number").val());
-    let result = beepBoop(num);
-    $("#result").text.(result);
-    $("#result").show();
+    const userNum = $("input#number").val();
+    let result = beepBoop(userNum);
+    $("#result").text(result);
   });
 });
