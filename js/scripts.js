@@ -6,15 +6,14 @@
 function beepBoop(num) {
   let numArray = [];
     for (let i=0; i <= num; i++) {
-      // let numString = i.toString();
-  
-      if (i.toString().includes("3")) {
+      let numString = i.toString();
+        if (numString.includes("3")) {
           numArray.push("Won't you be my neighbor?");
         } 
-        else if(i.toString().numArray.includes("2")) {
+        else if(numString.includes("2")) {
           numArray.push("Boop!");
         } 
-        else if (i.toString().numArray.includes("1")) {
+        else if (numString.includes("1")) {
           numArray.push("Beep!");
         } 
         else {
@@ -32,5 +31,3 @@ $(document).ready(function() {
     $("#result").text(beepBoop(userNum));
    });
 });
-
-Imma send you mine 1 sec
