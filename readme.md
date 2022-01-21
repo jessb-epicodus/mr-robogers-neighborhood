@@ -37,23 +37,18 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 
 ## Tests & Expected Outcomes
 
-* Test/objective: 
+* Describe: beep()
+Test/objective:  It should  
 Code: 
 Expected outcome: 
 
-* Test/objective: 
+* Describe: boop()
+Test/objective:  It should  
 Code: 
 Expected outcome: 
 
-* Test/objective: 
-Code: 
-Expected outcome: 
-
-* Test/objective: 
-Code: 
-Expected outcome: 
-
-* Test/objective: 
+* Describe: neighbor()
+Test/objective:  It should  
 Code: 
 Expected outcome: 
 
