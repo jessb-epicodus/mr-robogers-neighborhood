@@ -39,7 +39,7 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 
 ## Tests & Expected Outcomes
 
-* Describe: Array
+* Describe: numArray
 Test/objective:  Should use for loop & create string from 0 and to increase by 1 until it reaches the users number input.
 Code: 
     let numArray = [];
