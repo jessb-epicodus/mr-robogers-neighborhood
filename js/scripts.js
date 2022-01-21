@@ -1,11 +1,11 @@
 //business logic
-const userName = $("input#userName").val();
 function beepBoop(num) {
+const userName = $("input#userName").val();
   let numArray = [];
     for (let i=0; i <= num; i++) {
       let numString = i.toString();
         if (numString.includes("3")) {
-          numArray.push("Won't you be my neighbor," + userName + "?");
+          numArray.push("Won't you be my neighbor, " + userName + " ?");
         } else if(numString.includes("2")) {
           numArray.push("Boop!");
         } else if (numString.includes("1")) {
