@@ -7,13 +7,15 @@ const userName = $("input#userName").val(); //UI logic in bus. logic??
         if ((i % 100 === 0) && (i !== 0)) {
           numArray.push(" Hello, neighbor!");
         } else if (numString.includes("3")) {
-          numArray.push(" Won't you be my neighbor, " + userName + " ?");
+          numArray.push(" Won't you be my neighbor, " + userName + "?");
         } else if(numString.includes("2")) {
           numArray.push(" Boop!");
         } else if (numString.includes("1")) {
           numArray.push(" Beep!");
         } else {
-        numArray.push(" " + i)
+        numArray.push(" ")
+        // } else {
+        // numArray.push(" " + i)
         }
     }
     return numArray;
