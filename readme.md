@@ -64,7 +64,7 @@ Code: ...
 User Input: 23
 Expected outcome: 1, Boop!, Won't you be my neighbor?, 4... 22,  Won't you be my neighbor?
 
-Test/objective:  Function should replace any number containing 1 with "Beep!" & will not overwrite where also conatining 3 or 2.
+Test/objective:  Should replace any number containing 1 with "Beep!" & will not overwrite where also conatining 3 or 2.
 Code: ...
     } else if (numString.includes("1")) {
       numArray.push("Beep!");
@@ -72,13 +72,13 @@ Code: ...
 User Input: 13
 Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...9, Beep!, Beep!, Boop!, Won't you be my neighbor?
 
-Test/objective:  Function should replace any number divisible by 7 with "Hello, neighbor!" & will not overwrite where also conatining 3 or 2.
+Test/objective:  Should replace any number divisible by 7 with "Hello, neighbor!" & will overwrite where also conatining 1, 2 or 3.
 Code: ...
-    } else if (i % 7 === 0) {
+    } else if (i % 100 === 0) {
       numArray.push("Hello, neigbhor!");
     }
-User Input: 7
-Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...6, Hello, neighbor!
+User Input: 100
+Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...99, Hello, neighbor!
 
 ## Known Bugs
 
