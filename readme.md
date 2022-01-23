@@ -82,7 +82,7 @@ Expected outcome: Beep!, Boop!, Won't you be my neighbor?, 4...99, Hello, neighb
 
 ## Known Bugs
 
-* No known issues
+* Returns "0" when user doesnt enter a number.
 
 ## License
 
