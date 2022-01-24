@@ -4,8 +4,10 @@ const userName = $("input#userName").val(); //  UI logic in bus. logic??
   let numArray = [];
     for (let i=0; i <= num; i++) {
       let numString = i.toString();
-        // } else if ((userNum === " ") || (userName === " ")) {
+        // } if ((userNum === " ") || (userName === " ")) {
         //   return "Complete all fields";
+        // } else if (userNum === "0") {
+        //   return "0";
         if ((i % 100 === 0) && (i !== 0)) {
           numArray.push(" Hello, neighbor!");
         } else if (numString.includes("3")) {
