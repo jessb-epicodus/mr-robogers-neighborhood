@@ -4,11 +4,11 @@ const userName = $("input#userName").val(); //  UI logic in bus. logic??
   let numArray = [];
     for (let i=0; i <= num; i++) {
       let numString = i.toString();
-        // } if ((userNum === " ") || (userName === " ")) {
-        //   return "Complete all fields";
-        // } else if (userNum === "0") {
-        //   return "0";
-        if ((i % 100 === 0) && (i !== 0)) {
+        if (userName === "") {
+          return ("Please complete both fields.");
+        } else if (num === "") {
+          return (userName + ", please complete both fields.");
+        } else if ((i % 100 === 0) && (i !== 0)) {
           numArray.push(" Hello, neighbor!");
         } else if (numString.includes("3")) {
           numArray.push(" Won't you be my neighbor, " + userName + "?");
@@ -17,7 +17,7 @@ const userName = $("input#userName").val(); //  UI logic in bus. logic??
         } else if (numString.includes("1")) {
           numArray.push(" Beep!");
         } else {
-        numArray.push(" " + i) // i returns indx @ 0; () doesnot return @ 0 including when num=0
+        numArray.push(" " + numString);
         }
     }
     return numArray;
