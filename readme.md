@@ -45,7 +45,7 @@ Code:
     let numArray = [];
     for (let i=0; i <= num; i++) {
     }
-    return numArray;
+    return numString;
 User input: 5
 Expected outcome: 0, 1, 2, 3, 4, 5
 
